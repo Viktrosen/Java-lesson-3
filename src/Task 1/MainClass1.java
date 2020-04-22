@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class MainClass {
+public class MainClass1 {
 static List <String> list = new ArrayList<>();
 static String[] arr = {"butterfly","bug","caterpillar","caterpillar","bug","moth","bug","moth","mosquito","mosquito","mosquito","spider","spider","bee","scarab"};
 static TreeSet<String> set = new TreeSet<>();
@@ -19,7 +19,7 @@ static int j = 0;
             if (str.equals(list.get(i))){
                 j++;
             }
-            if (!str.equals(list.get(i))){
+            else {
                 System.out.println("Слово "+iter.next()+" встречается "+(j+1)+" раз(а)");
                 j=0;
             }
